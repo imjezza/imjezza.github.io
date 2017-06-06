@@ -7,11 +7,33 @@ html {
 	text-align: center;
 }
 
-nav {
+#nav-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	color: white;
 	text-align: center;
+	opacity: 0.5;
+    position: fixed;
+    top: 0;
+}
+
+#nav-list li {
+	float: left;
+}
+
+#nav-list li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    color: red;
 
 }
 
+/*#nav-list li a:hover {
+    background-color: #111;
+}*/
 
 .dough {
 	border-style: double;
@@ -50,7 +72,7 @@ th {
 
 tr:hover {background-color: #f5f5f5}
 
-a:visited {
+/*a:visited {
     color: white;
     font-size: 77px;
     text-decoration: none;
@@ -64,7 +86,7 @@ a:hover {
 a:link {
     color: black;
     text-decoration: none;
-}
+}*/
 
 #crust {
 	font-size: 18px;
@@ -79,4 +101,12 @@ h1 {
 
 .intro {
 	text-align: center;
+}
+
+#history-intro {
+	text-align: center;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: green;
 }
