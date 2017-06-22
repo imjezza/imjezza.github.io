@@ -8,7 +8,7 @@
 	<title>Here's A Form Survey</title>
 	<SCRIPT>
 		function textBoxValue() {
-		alert( document.frmTest.value );
+		alert("Thank you for your order!");
 		}
 	</SCRIPT>
 </head>
@@ -18,23 +18,55 @@
 				<li><a href="index.html">Go Home</a></li>	
 				<li><a href="pictures.html">Pizza Pictures</a></li>
 				<li><a href="pizza_history.html">Pizza History</a></li>
+				<li><a href="form_page.html">Pizza Survey</a></li>				
 				<li><a href="http://www.foodnetwork.com/recipes/articles/50-easy-pizzas.html">Other pizza plans...</a></li>
 			</ul>
 		</nav>
 
 		<FORM NAME="frmTest" METHOD="post" Action="">
+			<p><h2>Personal Details</h2></p>
 			<label for="text1">Enter your first name:</label>
-			<input id="text1" type="text" size="25" <!-- value="first name" -->>
+			<input id="text1" type="text" size="25" placeholder="first name">
 			<br />
 			<br />
 			<label for="text2">Enter your last name:</label>
-			<input id="text2" type="text" size="25" value="last name">
+			<input id="text2" type="text" size="25" placeholder="last name">
 			<br />
 			<br />
 			<label for="text3">Any Comments?</label>
-			<input id="text3" type="text" size="25" value="comments?">
+			<input id="text3" type="text" size="25" placeholder="comments?">
 			<br />
 			<br />
+			<label for="pizza size">Which size pizza would you like?</label>
+
+			<p><h2>Customize your pizza</h2></p>
+
+			<SELECT>
+			<OPTION Value="Personal Pan">Personal Pan</OPTION>
+			<OPTION Value="Small">Small</OPTION>
+			<OPTION Value="Medium">Medium</OPTION>
+			<OPTION Value="Large">Large</OPTION>
+			<OPTION Value="Extremely Large">Extremely Large</OPTION>
+			</SELECT>
+
+			<p></p>
+
+			<p><h3>Please select up to three toppings</h3></p>
+			<label for="C1"> Bacon </label>
+			<INPUT TYPE="Checkbox" Name="Browser" id="C1" value ="Bacon">
+
+			<LABEL FOR="C2"> Pepperoni </LABEL>
+			<INPUT TYPE="Checkbox" Name="Browser" ID="C2" Value="Pepperoni">
+			
+			<LABEL FOR="C3"> Mushrooms </LABEL>
+			<INPUT TYPE="Checkbox" Name="Browser" ID="C3" Value="Mushrooms">
+
+			<LABEL FOR="C4"> Peppers </LABEL>
+			<INPUT TYPE="Checkbox" Name="Browser" ID="C4" Value="Peppers">
+
+			<LABEL FOR="C5"> Onions </LABEL>
+			<INPUT TYPE="Checkbox" Name="Browser" ID="C5" Value="Onions">
+
 			<p></p>
 			<input type="Submit" value="Submit" id="button1" onClick="textBoxValue( )">
 
